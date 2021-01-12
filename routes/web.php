@@ -19,7 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user', 
-);
+Route::get('/test', function () {
+    return "welcome";
+});
+
 
 Route::get("/user", [UserController::class, "index"])->name("user.login");
